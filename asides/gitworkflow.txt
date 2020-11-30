@@ -1,0 +1,36 @@
+-----------------------
+working with branches
+-----------------------
+1. push your branch to Github
+$ git push origin [branch name]
+
+2. create a pull request
+go to the repo on Github and click "New Pull Request"
+(now we can "compare" the base branch (master/main) with our branch)
+
+3. code review with all group members
+
+4. everything is fine? Pull request will be merged
+
+5. going back to the master/main branch
+$ git checkout master/main
+
+6. pull the newest version to your local repo
+$ git pull
+
+7. git create your new branche
+$ git branch [branch name]
+
+8. git checkout your new branch
+$ git checkout [branch name]
+
+9. stage your changed file(s)
+$ git add [file name] | $ git add .
+
+10. commit your changes to your checkout branch with an informative commit message
+$ git commit -m "[commit message]"
+
+
+------------------------------
+using a developement branch???
+
