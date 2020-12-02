@@ -1,0 +1,231 @@
+-----------------------
+working with branches
+-----------------------
+0. meet with your group members to review code and resolve git merge conflicts
+
+1. (???) pull the newest code from the developement branch to your working branch 
+
+2. resolve all conflicts
+
+2. push your local working branch to Github
+$ git push origin [working branch name]
+
+3. create a pull request
+go to the repo on Github and click "New Pull Request"
+(now we can "compare" the base branch (developement branch) with your working branch)
+
+4. code review with all group members
+
+5. everything is fine? Pull request will be merged
+
+6. delete your working branch
+
+7. going back to the developement branch
+$ git checkout [developement branch]
+
+8. pull the newest version to your local repo
+$ git pull
+
+9. create your new working branche
+$ git branch [working branch name]
+
+9. git checkout your new working branch
+$ git checkout [working branch name]
+
+10. stage your changed file(s)
+$ git add [file name] | $ git add .
+
+11. commit your changes to your checkout branch with an informative commit message
+$ git commit -m "[commit message]"
+
+12. push all commits to your working branch
+$ git push origin [working branch name]
+
+
+------------------------------
+using a developement branch
+
+merging the developement branch to the master/main branch
+
+GIT | GITHUB WORKFLOW
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIT | GITHUB WORKFLOW</title>
+</head>
+<body>
+  <h1>GIT | GITHUB WORKFLOW</h1>
+  <h2>Getting started (Admin)</h2>
+  <p>The initial Github and Git setup for the group project</p>
+  <ol>
+    <li>
+      <h3>Create a repository on Github</h3>
+    </li>
+    <li>
+      <h3>Clone the repository to your local System</h3>
+      <pre>
+        <code>
+          $ git clone [provided url on github]
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Creating a developement branch locally</h3>
+      <pre>
+        <code>
+          $ git checkout -b [dev_branch_name]
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Creating initial files or other initial changes to the repo</h3>
+      <pre>
+        <code>
+          $ touch index.html
+          $ touch style.css
+          $ git add .
+          $ git commit -m "first commit"
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Pushing the dev branch to remote</h3>
+      <p>No pulling is needed because there is no code yet.</p>
+      <pre>
+        <code>
+          $ git push origin [dev_branch_name]
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Add your Team members as contributors on Github</h3>
+      <figure>
+        <img src="Collaborators_on_Github.png" alt="Adding Contriburos to the Github project" width="300" height="auto">
+        <figcaption>Adding Contriburos</figcaption>
+      </figure>
+    </li>
+  </ol>
+
+  <h2>Getting started (Contributors)</h2>
+  <p>The initial setup for project contributors</p>
+  <ol>
+    <li>
+      <h3>Copy the project link on Github</h3>
+      <figure>
+        <img src="GitHub_Link.png" alt="Copying Github Link" width="300" height="auto">
+        <figcaption>Copying the Github Link</figcaption>
+      </figure>
+    </li>
+    <li>
+      <h3>Clone the github repository to your local System</h3>
+      <pre>
+        <code>
+          $ git clone [copyed url on github]
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Make sure to be in the initial branch</h3>
+      <p>It should be the default branch (usually main/master).</p>
+      <p>Either your git bash shows the branch you're on or you can call the git branch command and look for the branch with the ascerist (*).</p>
+      <pre>
+        <code>
+          $ git branch
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Creating a developement branch locally</h3>
+      <pre>
+        <code>
+          $ git checkout -b [dev_branch_name]
+        </code>
+      </pre>
+    </li>
+  </ol>
+
+  <h2>Daily Workflow</h2>
+  <p>Creating a new feature, implementing changes, fixing bugs.</p>
+  <ol>
+    <li>
+      <h3>Creating a working branch locally</h3>
+      <pre>
+        <code>
+          $ git checkout -b [work_branch_name]
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Assure your are working on your working branch</h3>
+      <pre>
+        <code>
+          $ git branch
+        </code>
+      </pre>
+      <p>You should see all existing branches and your working branch with an ascerist *</p>
+    </li>
+    <li>
+      <h3>Doing some work</h3>
+      <pre>
+        <code>
+          $ git add.
+          $ git commit -m "a good commit meassage"
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>After finishing your work push it to Github</h3>
+      <pre>
+        <code>
+          $ git push origin [work_branch_name]
+        </code>
+        <p>Your working branch with all your changes is on Github now.</p>
+      </pre>
+    </li>
+    <li>
+      <h3>Create a Pull Request</h3>
+      <p>Make a new Pull Request on Github choosing the development branch as base and your working branch as the one to be compared with.</p>
+      <p>Give a meaningful title like "integrate feature xyz". Please no redundant information. Give it an good description as well. Add pictures as well.</p>
+      <figure>
+        <img src="PullRequest.png" alt="Pull Request on Github" width="300" height="auto">
+        <figcaption>New Pull Request</figcaption>
+      </figure>
+      <figure>
+        <img src="PR_Branches.png" alt="Pull Request from development to working branch" width="300" height="auto">
+        <figcaption>Pull Request from development to working branch</figcaption>
+      </figure>
+    </li>
+    <li>
+      <h3>Make a Pull Request</h3>
+      <p>Make a new Pull Request on Github choosing the development branch as base and your working branch as the one to be compared with.</p>
+      <p>Give a meaningful title like "integrate feature xyz". Please no redundant information. Give it an good description as well. Add pictures as well.</p>
+      <figure>
+        <img src="PullRequest.png" alt="Pull Request on Github" width="300" height="auto">
+        <figcaption>New Pull Request</figcaption>
+      </figure>
+      <figure>
+        <img src="PR_Branches.png" alt="Pull Request from development to working branch" width="300" height="auto">
+        <figcaption>Pull Request from development to working branch</figcaption>
+      </figure>
+    </li>
+  </ol>
+
+  <h2>Handle the Pull Request</h2>
+  <p>Its a</p>
+  <ol>
+    <li>
+      <h3>Review</h3>
+      <pre>
+        <code>
+          
+        </code>
+      </pre>
+    </li>
+  </ol>
+
+  
+</body>
+</html>
