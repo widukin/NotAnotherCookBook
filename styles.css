@@ -19,6 +19,11 @@ body {
 Homepage
 ----------------------------------------- */
 
+#hero {
+  background: url(./img/1491742014_fsasafsadasd.gif) center center / cover
+    no-repeat;
+}
+
 .featured-recipes {
   flex-wrap: wrap;
   justify-content: center;
