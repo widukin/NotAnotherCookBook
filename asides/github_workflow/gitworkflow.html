@@ -100,6 +100,15 @@
   <p>Creating a new feature, implementing changes, fixing bugs.</p>
   <ol>
     <li>
+      <h3>Update your local development branch</h3>
+      <pre>
+        <code>
+          $ git checkout [development_branch_name]
+          $ git pull origin [development_branch_name]
+        </code>
+      </pre>
+    </li>
+    <li>
       <h3>Creating a working branch locally</h3>
       <pre>
         <code>
@@ -137,6 +146,7 @@
     <li>
       <h3>Create a Pull Request</h3>
       <p>Make a new Pull Request on Github choosing the development branch as base and your working branch as the one to be compared with.</p>
+      <p><strong>Resolve conflicts!</strong></p>
       <p>Give a meaningful title like "integrate feature xyz". Please no redundant information. Give it an good description as well. Add pictures as well.</p>
       <p>Add reviewers to your PR.</p>
       <figure>
@@ -151,11 +161,11 @@
   </ol>
 
   <h2>Handle the Pull Request</h2>
-  <p>Merging should a team approach.</p>
+  <p>Merging should be a team approach.</p>
   <ol>
     <li>
       <h3>Review</h3>
-      <p>The assign Reviewers do their review comments and approve or request changes on the PR.</p>
+      <p>The assigned Reviewers do their review comments and approve or request changes on the PR.</p>
       <figure>
         <img src="Review_PR.png" alt="Review the PR" width="300" height="auto">
         <figcaption>Review the Pull Request</figcaption>
@@ -165,6 +175,58 @@
       <h3>Implement the required changes</h3>
       <p>Follow the <a href="#daily_workflow">daily workflow steps</a>.</p>
     </li>
+    <li>
+      <h3>Merge the Pull Request</h3>
+      <figure>
+        <img src="merge_PR.png" alt="Review the PR" width="300" height="auto">
+        <figcaption>merge the Pull Request</figcaption>
+      </figure>
+    </li>
+    <li>
+      <h3>Delete your remote working branch</h3>
+      <figure>
+        <img src="delete_remote_working_branch.png" alt="Review the PR" width="300" height="auto">
+        <figcaption>Deleting the remote working branch</figcaption>
+      </figure>
+    </li>
+    <li>
+      <h3>Delete your local working branch</h3>
+      <pre>
+        <code>
+          $ git checkout [development_branch_name]
+          $ git branch -d [working_branch_name]
+        </code>
+      </pre>
+    </li>
+    <li>
+      <h3>Update the state of your local repo</h3>
+      <pre>
+        <code>
+          $ git fetch -p
+        </code>
+      </pre>
+    </li>
+  </ol>
+
+  <h2>Merging development branch with the main branch</h2>
+  <ol>
+    <li>
+      <h3>Create a pull request from the development branch to the main branch on github</h3>
+    </li>
+    <li>
+      <h3>Resolving conflicts</h3>
+    </li>
+    <li>
+      <h3>Add Reviewers</h3>
+    </li>
+    <li>
+      <h3>Reviewing Process</h3>
+    </li>
+    <li>
+      <h3>Merge PR</h3>
+      <p><strong>Do not delete the development branch!</strong></p>
+    </li>
+
   </ol>
 
   
