@@ -13,9 +13,6 @@ img.banner{
 }
 .marker {
     grid-column: 1;
-    font-weight: 700;
-    font-family: "Roboto Slab", serif;
-    font-size: 1.5rem;
 }
 .marker.ingredients{
     align-self: center;
