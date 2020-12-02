@@ -1,0 +1,36 @@
+.navbar {
+  background-color: #ffedce;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.navbar a {
+  color: black;
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.navbar a:hover {
+  background-color: #ccc;
+}
+
+.meat {
+  padding: 50px 0 0 0;
+}
+
+.vegetarian {
+  padding: 50px 0 0 0;
+}
+
+.vegan {
+  padding: 50px 0 0 0;
+}
