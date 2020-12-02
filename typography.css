@@ -20,9 +20,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.btn {
   font-weight: 700;
   font-family: "Roboto Slab", serif;
+}
+.btn {
+  letter-spacing: 0.05em;
 }
 nav a {
   font-size: 1.2rem;

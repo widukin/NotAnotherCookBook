@@ -19,4 +19,10 @@ img.banner{
 }
 .share {
     width: max-content;
+    border-color: #00754D;
+    background-color: #00754D;
+}
+.share:hover,.share:focus  {
+    border-color: #00754D;
+    background-color: #003623;
 }
