@@ -11,21 +11,7 @@ body {
   max-width: 1500px;
 }
 
-.flex {
-  display: flex;
-}
-
-/* -----------------------------------------
-Homepage
------------------------------------------ */
-
-.featured-recipes {
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 3em;
-}
-
-.recipe-card {
-  margin: 0 0 6vh 3vw;
-  max-width: 350px;
+/* modifying Bootstrap class card */
+.card {
+  max-width: 350px !important;
 }
