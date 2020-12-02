@@ -3,3 +3,26 @@ img.banner{
     max-height: 60vh;
     object-fit: cover;
 }
+.container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 30px auto;
+}
+.container > * {
+    grid-column: 2;
+}
+.marker {
+    grid-column: 1;
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+}
+.marker.ingredients{
+    align-self: center;
+}
+.share {
+    width: max-content;
+}
+hr {
+    width: 100%;            
+  }
