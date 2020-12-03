@@ -1,20 +1,20 @@
-.wrapper {
-  display: flex:
-  position: relative;
+.d-flex {
+  display: flex;
 }
 
-
-.wrapper .navbar {
+nav {
+  flex-direction: column;
   background-color: #ffedce;
-  height: 100%;
   width: 200px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-.wrapper .navbar a {
+nav ul {
+  padding: 0 0 15px 0;
+  list-style: none;
+}
+
+nav a {
   color: black;
   display: block;
   padding: 12px;
@@ -23,11 +23,17 @@
   line-height: 10px;
 }
 
-.wrapper .navbar a:hover {
-  background-color: #ccc;
+nav a:hover {
+  background-color: #00754d;
+  text-decoration: none;
+  color: black;
 }
 
 h3 {
+  padding: 10px 0 0 10px;
   font-size: 1.2rem;
 }
 
+hr {
+  width: 100%;
+}
