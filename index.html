@@ -22,17 +22,19 @@
 
   <body>
     <div id="hero" class="vh-100 w100">
-      <img src="./img/1491742014_fsasafsadasd.gif" alt="Not Another Cookbook Hero" class="image-fluid w-100 h-75">
+      <div id="hero_img">
+        <img src="./img/1491742014_fsasafsadasd.gif" alt="Not Another Cookbook Hero" class="image-fluid w-100">
+      </div>
       <header>
         <div class="container p-5">
           <h1 class="text-uppercase">Not Another Cookbook</h1>
           <p class="py-3">where you find recipes that you will certainly find somewhere else. But at least your don't have to scroll through 1000+ recipes to find the right one.</p>
         </div>
-        <div>
-          <a href="#card"><span></span>Scroll</a>
-          <!-- TODO: id on the section with the cards!!! -->
-        </div>
       </header>
+      <div id="hero_scroll">
+        <a href="#card"><span></span></a>
+        <!-- TODO: id on the section with the cards!!! -->
+      </div>
     </div>
     <div id="card" class="flex featured-recipes">
       <div class="card recipe-card">
