@@ -25,6 +25,12 @@ Homepage
   position: relative;
 }
 
+#hero header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
 .featured-recipes {
   flex-wrap: wrap;
   justify-content: center;
