@@ -7,14 +7,28 @@ Global
   padding: 0;
 }
 
-body {
-  max-width: 1500px;
+/* -----------------------------------------
+Navigation bar
+----------------------------------------- */
+
+.nav-container {
+  min-width: 300px;
 }
 
 /* modifying Bootstrap class card */
 .card {
   max-width: 350px !important;
 }
+
+/* -----------------------------------------
+Featured recipes
+----------------------------------------- */
+
+/* modifying Bootstrap class card */
+.card {
+  max-width: 350px !important;
+}
+
 /* -----------------------------------------
 Recipe styling
 ----------------------------------------- */
