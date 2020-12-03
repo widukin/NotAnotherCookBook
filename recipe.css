@@ -3,19 +3,16 @@ img.banner{
     max-height: 60vh;
     object-fit: cover;
 }
-.container {
+.recipe-grid {
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: 40px auto;
 }
-.container > * {
+.recipe-grid > * {
     grid-column: 2;
 }
-.marker {
+.recipe-grid .marker {
     grid-column: 1;
-}
-.marker.ingredients{
-    align-self: center;
 }
 .share {
     width: max-content;
@@ -28,7 +25,4 @@ img.banner{
 }
 .icon {
     width: 30px;
-}
-li {
-    line-height: 2em;
 }
