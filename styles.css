@@ -1,36 +1,33 @@
-.navbar {
+.wrapper {
+  display: flex:
+  position: relative;
+}
+
+
+.wrapper .navbar {
   background-color: #ffedce;
   height: 100%;
   width: 200px;
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 20px;
 }
 
-.navbar a {
+.wrapper .navbar a {
   color: black;
-  display: flex;
+  display: block;
   padding: 12px;
   text-decoration: none;
-  width: 100%;
-  justify-content: flex-start;
+  font-size: 0.8rem;
+  line-height: 10px;
 }
 
-.navbar a:hover {
+.wrapper .navbar a:hover {
   background-color: #ccc;
 }
 
-.meat {
-  padding: 50px 0 0 0;
+h3 {
+  font-size: 1.2rem;
 }
 
-.vegetarian {
-  padding: 50px 0 0 0;
-}
-
-.vegan {
-  padding: 50px 0 0 0;
-}
