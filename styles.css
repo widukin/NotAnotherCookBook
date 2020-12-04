@@ -12,7 +12,7 @@ Navigation bar
 ----------------------------------------- */
 
 .nav-container {
-  width: 300px;
+  min-width: 300px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
   z-index: 10;
   background-color: #ffedce;
