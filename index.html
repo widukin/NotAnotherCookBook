@@ -13,6 +13,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./typography.css" type="text/css" />
 
@@ -20,35 +21,220 @@
   </head>
 
   <body>
-    <nav class="d-flex">
-      <img
-        class="logo"
-        src="./asides/mockup/Logo200px.png"
-        alt="NOT ANOTHER COOK BOOK Logo"
-      />
+    <div class="d-flex">
+      <div class="d-flex nav-container">
+        <nav class="d-flex">
+          <img
+            class="logo"
+            src="./asides/mockup/Logo200px.png"
+            alt="NOT ANOTHER COOK BOOK Logo"
+          />
 
-      <hr />
+          <hr />
 
-      <h3>meat</h3>
+          <h3>meat</h3>
 
-      <ul>
-        <li><a href="#">meat_recipe1</a></li>
-        <li><a href="#">meat_recipe2</a></li>
-      </ul>
+          <ul>
+            <li><a href="#">meat_recipe1</a></li>
+            <li><a href="#">meat_recipe2</a></li>
+          </ul>
 
-      <h3>vegetarian</h3>
+          <h3>vegetarian</h3>
 
-      <ul>
-        <li><a href="#">vegetarian_recipe1</a></li>
-        <li><a href="#">vegetarian_recipe2</a></li>
-      </ul>
+          <ul>
+            <li><a href="#">vegetarian_recipe1</a></li>
+            <li><a href="#">vegetarian_recipe2</a></li>
+          </ul>
 
-      <h3>vegan</h3>
+          <h3>vegan</h3>
 
-      <ul>
-        <li><a href="#">vegan_recipe1</a></li>
-        <li><a href="#">vegan_recipe2</a></li>
-      </ul>
-    </nav>
+          <ul>
+            <li><a href="#">vegan_recipe1</a></li>
+            <li><a href="#">vegan_recipe2</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex-grow-1">
+        <div id="hero" class="w-100">
+          <div id="hero_img">
+            <img
+              src="./img/E7ws.gif"
+              alt="Not Another Cookbook Hero"
+              title="https://www.youtube.com/watch?v=h-_2rXgFt5I"
+              class="image-fluid h-100 w-100"
+            />
+          </div>
+          <header class="container p-5">
+            <h1 class="text-uppercase">Not Another Cookbook</h1>
+            <p class="description py-3">
+              where you find recipes that you will certainly find somewhere
+              else. But at least your don't have to scroll through 1000+ recipes
+              to find the right one.
+            </p>
+          </header>
+          <div id="hero_scroll">
+            <a href="#card"><span></span></a>
+            <!-- TODO: id on the section with the cards!!! -->
+          </div>
+        </div>
+        <div class="d-flex flex-wrap p-5 justify-content-center">
+          <div class="card mb-3 mr-3">
+            <img
+              class="card-img-top"
+              src="./img/gazpacho.jpg"
+              alt="Recipe picture"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Gazpacho Manchego</h2>
+              <p class="card-text">
+                Gazpacho Manchegos only shares its name with the cold soup
+                gazpacho that is mainly consumed during the summer, as this is a
+                mainly a game meat stew eaten with unleavened bread cakes. The
+                only relation between the two is the the use of bread. While
+                gazpacho is original from Andalusia, Gazpachos Manchegos
+                originates in La Mancha, and in fact is mentioned in Don Quixote
+                with one of its other names "galiano", however it is eaten in
+                many areas, including the Spanish regions of Alicante and
+                Valencia.
+              </p>
+              <p class="card-text">
+                There are also similar dishes which are eaten in other
+                countries, including gaspacho oranais which is eaten in the
+                North-West of Algeria. While the Andalusian gazpacho is
+                singular, the Manchego one is plural. It was the shepherds of La
+                Mancha that created this dish, and in fact galiano means "glen".
+              </p>
+              <div class="card-btn text-center">
+                <a href="#" class="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mr-3">
+            <img
+              class="card-img-top"
+              src="./img/cholera.jpg"
+              alt="Recipe picture"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Walliser Cholera</h2>
+              <p class="card-text">
+                Its flaky pastry exterior holds apples, cheese, potatoes,
+                onions, leeks, bacon, and pears. Seen as a way to use leftovers
+                (like extra Gschwellti (boiled potatoes) from your raclette),
+                and not really held to any strict rules about what and how much
+                goes in (as many versions as there are grandmothers in the
+                Wallis etc.) it is an easily customizable, delicious and filling
+                dish.
+              </p>
+              <p class="card-text">
+                There is a persistent rumour that the dish is indeed named for
+                the disease Cholera, after a particularly bad outbreak in the
+                1830s. People in the Wallis stayed home to avoid contamination
+                and were forced to use things they already had in their larder
+                and gardens to feed their families.
+              </p>
+              <p class="card-text">
+                More likely, however, is that it's named after the glowing coal
+                in the fireplace where the pan would have sat to bake.
+              </p>
+              <div class="card-btn text-center">
+                <a href="#" class="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mr-3">
+            <img
+              class="card-img-top"
+              src="./img/MisoSweetPotatoes.jpg"
+              alt="Kyoto Style Sweet Potatoes with miso, ginger and scallionse"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Kyoto Style Sweet Potatoes</h2>
+              <p class="card-text">
+                Here’s a simple vegan side dish we’ve been enjoying ever since
+                we went to Japan a few years ago – Kyoto-style Roasted Sweet
+                Potatoes with miso, ginger and scallions.
+              </p>
+              <p class="card-text">
+                The sweet potatoes (or yams in this case) are roasted until fork
+                tender, then broiled to get a little color, then topped with a
+                delicious pan sauce made with finely minced shallots, ginger and
+                miso. Though simple, we sometimes served this for dinner as our
+                “main” with a large salad and find it deeply filling and
+                satisfying.
+              </p>
+              <p class="card-text">
+                Kyoto-Style, Roasted Sweet Potatoes with Miso, Ginger and
+                Scallions – a delicious vegan side dish that is easy to make and
+                full of amazing flavor!
+              </p>
+              <div class="card-btn text-center">
+                <a href="#" class="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mr-3">
+            <img
+              class="card-img-top"
+              src="./img/card_placeholder.png"
+              alt="Recipe picture"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Recipe 4</h2>
+              <p class="card-text">
+                Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi
+                welsh onion daikon amaranth tatsoi tomatillo melon azuki bean
+                garlic.
+              </p>
+              <p class="card-text">
+                Turnip greens yarrow ricebean rutabaga endive cauliflower sea
+                lettuce kohlrabi amaranth water spinach avocado daikon napa
+                cabbage asparagus winter purslane kale. Celery potato scallion
+                desert raisin horseradish spinach carrot soko. Lotus root water
+                spinach fennel kombu maize bamboo shoot green bean swiss chard
+                seakale pumpkin onion chickpea gram corn pea. Brussels sprout
+                coriander water chestnut gourd swiss chard wakame kohlrabi
+                beetroot carrot watercress. Corn amaranth salsify.
+              </p>
+              <div class="card-btn text-center">
+                <a href="#" class="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-3 mr-3">
+            <img
+              class="card-img-top"
+              src="./img/card_placeholder.png"
+              alt="Recipe picture"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Recipe 5</h2>
+              <p class="card-text">
+                Dragée jujubes wafer. Chocolate cake apple pie sweet roll
+                marzipan lemon drops bonbon tootsie roll. Cookie sweet pudding
+                liquorice tart. Topping jelly candy cake pudding chocolate bar
+                danish chupa chups. Pie donut danish chupa chups caramels. Bear
+                claw topping croissant lemon drops. Cake macaroon soufflé lemon
+                drops candy canes.
+              </p>
+              <p class="card-text">
+                Muffin oat cake dragée cake. Bear claw donut jelly-o bear claw.
+                Sesame snaps pie apple pie. Tootsie roll powder tart apple pie
+                sesame snaps. Danish halvah candy canes sesame snaps oat cake
+                halvah. Candy chupa chups sweet. Sweet roll muffin candy dessert
+                powder apple pie oat cake candy canes tart.
+              </p>
+              <div class="card-btn text-center">
+                <a href="#" class="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
