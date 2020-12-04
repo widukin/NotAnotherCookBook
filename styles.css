@@ -7,22 +7,17 @@ Global
   padding: 0;
 }
 
-body {
-  max-width: 1500px;
-}
+/* -----------------------------------------
+Navigation bar
+----------------------------------------- */
 
-.flex {
-  display: flex;
-}
-
-.flex-col {
-  flex-direction: column;
+.nav-container {
+  min-width: 300px;
 }
 
 /* -----------------------------------------
-Homepage
+Homepage Hero
 ----------------------------------------- */
-
 #hero {
   /*   background: url(./img/1491742014_fsasafsadasd.gif) center center / cover
     no-repeat; */
@@ -83,13 +78,47 @@ Homepage
   opacity: 0.2;
 }
 
-.featured-recipes {
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 3em;
+/* -----------------------------------------
+Featured recipes
+----------------------------------------- */
+/* modifying Bootstrap class card */
+.card {
+  max-width: 350px !important;
 }
 
-.recipe-card {
-  margin: 0 0 6vh 3vw;
-  max-width: 350px;
+/* -----------------------------------------
+Recipe styling
+----------------------------------------- */
+img.banner {
+  width: 100%;
+  max-height: 60vh;
+  object-fit: cover;
+}
+
+/* setting up a grid to position icons and numbers next to the regular text*/
+.recipe-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 40px auto;
+}
+.recipe-grid > * {
+  grid-column: 2;
+}
+.recipe-grid .marker {
+  grid-column: 1;
+}
+/* share button styling */
+.share {
+  width: max-content;
+  border-color: #00754d;
+  background-color: #00754d;
+}
+.share:hover,
+.share:focus {
+  border-color: #00754d;
+  background-color: #003623;
+}
+/* styling for recipe icon */
+.recipe-icon {
+  width: 30px;
 }
