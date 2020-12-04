@@ -1,0 +1,34 @@
+/* importing Open sans and Roboto Slab*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Roboto+Slab:wght@400;700&display=swap');
+
+/* general typography related styling*/
+body {
+  font-family: 'Open Sans', serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p.description {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+.btn {
+  letter-spacing: 0.05em;
+}
+nav a {
+  font-size: 1.2rem;
+  color: inherit;
+}

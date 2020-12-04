@@ -1,0 +1,188 @@
+/* -----------------------------------------
+Global
+----------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------
+Navigation bar
+----------------------------------------- */
+
+.nav-container {
+  z-index: 10;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  min-width: 300px;
+  background-color: #ffedce;
+}
+
+nav {
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffedce;
+}
+
+nav ul {
+  padding: 0 0 15px 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 12px;
+  line-height: 1.15em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #00754d;
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  padding: 10px 0 0 10px;
+  font-size: 1.2rem;
+}
+
+hr {
+  width: 100%;
+}
+/* -----------------------------------------
+Homepage Hero
+----------------------------------------- */
+#hero {
+  position: relative;
+  height: 100vh;
+}
+
+#hero_img {
+  overflow: hidden;
+  height: 52%;
+}
+
+#hero_img img {
+  object-fit: cover;
+}
+
+#hero header {
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  height: 45%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#hero header::-webkit-scrollbar {
+  display: none;
+}
+
+#hero_scroll {
+  height: 3%;
+}
+
+#hero_scroll a {
+  z-index: 2;
+  display: block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding-top: 5vh;
+}
+
+#hero_scroll a:hover span {
+  opacity: 0.7;
+}
+
+#hero_scroll a span {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0.4;
+  margin-left: -12px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+}
+
+/* -----------------------------------------
+Featured recipes
+----------------------------------------- */
+/* modifying Bootstrap class card */
+.card {
+  max-width: 350px !important;
+}
+
+/* -----------------------------------------
+Recipe styling
+----------------------------------------- */
+img.banner {
+  position: relative;
+  object-fit: cover;
+  width: 100%;
+  max-height: 60vh;
+}
+
+/* hover effect on banner image */
+/* for absolute positioning inside this container */
+.banner-container {
+  position: relative;
+}
+/* put the element off screen */
+.offscreen {
+  position: absolute;
+  top: 40%;
+  left: -99999px;
+}
+/* put element on screen at hover over the image */
+.banner-container:hover .offscreen {
+  left: 50%;
+}
+
+.banner-container:hover img {
+  opacity: 0.5;
+}
+
+/* center element */
+.center-me {
+  position: relative;
+  left: -50%;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: inherit;
+}
+
+/* setting up a grid to position icons and numbers next to the regular text*/
+.recipe-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 40px auto;
+}
+.recipe-grid > * {
+  grid-column: 2;
+}
+.recipe-grid .marker {
+  grid-column: 1;
+}
+/* share button styling */
+.share {
+  border-color: #00754d;
+  width: max-content;
+  background-color: #00754d;
+}
+.share:hover,
+.share:focus {
+  border-color: #00754d;
+  background-color: #003623;
+}
+/* styling for recipe icon */
+.recipe-icon {
+  width: 30px;
+}
