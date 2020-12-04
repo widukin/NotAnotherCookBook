@@ -65,7 +65,7 @@ Homepage
 }
 
 #hero_scroll a:hover span {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 #hero_scroll a span {
@@ -80,7 +80,7 @@ Homepage
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 .featured-recipes {
