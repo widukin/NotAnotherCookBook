@@ -17,15 +17,59 @@
     <link rel="stylesheet" href="../typography.css" type="text/css" />
     <link rel="stylesheet" href="../styles.css" type="text/css" />
 
-    <title>Not Another Cookbook</title>
+    <title>Thai Red Curry with Vegetables</title>
   </head>
   <body>
-    <div class="flex-grow-1">
-        <img
-          class="img-fluid banner"
-          src="../img/thai-red-curry-with-vegetables.jpg"
-          alt="Thai-Curry-with-vegetables"
-        />
+    <div class="d-flex">
+      <div class="d-flex nav-container p-4">
+        <nav class="d-flex">
+          <img
+            class="logo"
+            src="../img/Logo.svg"
+            alt="NOT ANOTHER COOK BOOK Logo"
+          />
+
+          <hr />
+
+          <h2>meat</h2>
+
+          <ul>
+            <li><a href="./recipe_gazpacho.html">Gazpacho Manchego</a></li>
+            <li><a href="./recipe_cholera.html">Walliser Cholera</a></li>
+          </ul>
+
+          <h2>vegetarian</h2>
+
+          <ul>
+            <li><a href="./recipe_thai_red_curry.html">Thai Red Curry with Vegetables</a></li>
+            <li><a href="./recipe_vegetarian_peanut_soup.html">Vegetarian Peanut Soup</a></li>
+            <li><a href="./recipe_vegetarian_chili.html">Homemade Vegetarian Chili</a></li>
+          </ul>
+
+          <h2>vegan</h2>
+
+          <ul>
+            <li>
+              <a href="./recipe_summer_vegetable_curry.html"
+                >Tofu and Summer Vegetable Curry</a
+              >
+            </li>
+            <li>
+              <a href="./recipe_spanish_spinach.html"
+                >Spanish Spinach with Chickpeas</a
+              >
+          <li><a href="./recipe_kyoto_style_sweet_potatoes.html">Kyoto Style Sweet Potatoes</a></li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div  class="flex-grow-1">
+        <div class="banner-container">
+          <img class="img-fluid banner" src="../img/thai-red-curry-with-vegetables.jpg" />
+          <div class="offscreen">
+            <p class="center-me">Thai Red Curry with Vegetables</p>
+          </div>
+        </div>
         <div class="recipe-grid container pb-5">
           <h1 class="mt-5">Thai Red Curry with Vegetables</h1>
           <p class="description mt-3">
@@ -127,16 +171,12 @@
         </div>
         <hr class="mt-3" />
         <div class="recipe-grid container mb-5">
-          <a
-            href="#"
-            type="button"
-            id="share"
-            class="btn btn-primary share py-2 px-4"
-            onclick="alert('Page at ' + document.documentURI +' has been shared.\nWhere to? Wouldn\'t you like to know...')"
-            >share</a
-          >
+          <button
+            id="share" class="btn btn-primary share py-2 px-4"
+            onclick="alert('Page at ' + document.documentURI +' has been shared.\nWhere to? Wouldn\'t you like to know...')" >share
+          </button>
         </div>
       </div>
     </div>
-</body>
+  </body>
 </html>
