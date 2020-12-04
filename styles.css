@@ -12,17 +12,17 @@ Navigation bar
 ----------------------------------------- */
 
 .nav-container {
-  min-width: 300px;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
   z-index: 10;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  min-width: 300px;
   background-color: #ffedce;
 }
 
 nav {
   flex-direction: column;
-  background-color: #ffedce;
   width: 100%;
   min-height: 100vh;
+  background-color: #ffedce;
 }
 
 nav ul {
@@ -33,8 +33,8 @@ nav ul {
 nav a {
   display: block;
   padding: 12px;
-  text-decoration: none;
   line-height: 1.15em;
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -55,8 +55,6 @@ hr {
 Homepage Hero
 ----------------------------------------- */
 #hero {
-  /*   background: url(./img/1491742014_fsasafsadasd.gif) center center / cover
-    no-repeat; */
   position: relative;
   height: 100vh;
 }
@@ -103,15 +101,15 @@ Homepage Hero
   position: absolute;
   bottom: 15px;
   left: 50%;
-  width: 24px;
-  height: 24px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0.4;
   margin-left: -12px;
   border-left: 1px solid #000;
   border-bottom: 1px solid #000;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
   box-sizing: border-box;
-  opacity: 0.4;
+  width: 24px;
+  height: 24px;
 }
 
 /* -----------------------------------------
@@ -126,10 +124,10 @@ Featured recipes
 Recipe styling
 ----------------------------------------- */
 img.banner {
+  position: relative;
+  object-fit: cover;
   width: 100%;
   max-height: 60vh;
-  object-fit: cover;
-  position: relative;
 }
 
 /* hover effect on banner image */
@@ -156,9 +154,9 @@ img.banner {
 .center-me {
   position: relative;
   left: -50%;
-  color: inherit;
   font-size: 2rem;
   font-weight: bolder;
+  color: inherit;
 }
 
 /* setting up a grid to position icons and numbers next to the regular text*/
@@ -175,8 +173,8 @@ img.banner {
 }
 /* share button styling */
 .share {
-  width: max-content;
   border-color: #00754d;
+  width: max-content;
   background-color: #00754d;
 }
 .share:hover,
