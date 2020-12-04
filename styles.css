@@ -12,7 +12,7 @@ Navigation bar
 ----------------------------------------- */
 
 .nav-container {
-  min-width: 300px;
+  width: 300px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
   z-index: 10;
   background-color: #ffedce;
@@ -21,7 +21,7 @@ Navigation bar
 nav {
   flex-direction: column;
   background-color: #ffedce;
-  width: 200px;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -31,18 +31,16 @@ nav ul {
 }
 
 nav a {
-  color: black;
   display: block;
   padding: 12px;
   text-decoration: none;
-  font-size: 0.8rem;
-  line-height: 10px;
+  line-height: 1.15em;
 }
 
 nav a:hover {
   background-color: #00754d;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 h3 {
